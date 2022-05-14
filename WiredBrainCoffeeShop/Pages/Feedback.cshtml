@@ -1,0 +1,96 @@
+﻿@page "/thoughts"
+@model FeedbackModel
+
+<div class="container">
+    <h1 class="mt-4 mb-3">
+        Feedback
+        <small>Let us know how we're doing.</small>
+    </h1>
+    <hr />
+   
+    <div class="row">
+        <p>We care about what you thoughts and feelings - let us know how we can better serve you.</p>
+        <br />
+        <form asp-page="Feedback" method="post">
+            <div class="control-group form-group">
+                <div class="controls">
+                    <label asp-for="Feedback.Name">Your Name:</label>
+                    <input asp-for="Feedback.Name" class="form-control" />
+                    <span asp-validation-for="Feedback.Name" style="color:red;"></span>
+                    <p class="help-block"></p>
+                </div>
+            </div>
+            <div class="control-group form-group">
+                <div class="controls">
+                    <label>Phone Number:</label>
+                    <input asp-for="Feedback.Phone" class="form-control" />
+                    <span asp-validation-for="Feedback.Phone" style="color:red;"></span>
+                </div>
+            </div>
+            <div class="control-group form-group">
+                <div class="controls">
+                    <label>Email:</label>
+                    <input asp-for="Feedback.Email" class="form-control" />
+                    <span asp-validation-for="Feedback.Email" style="color:red;"></span>
+                </div>
+            </div>
+            <div class="control-group form-group">
+                <label><strong>Flavor</strong> - How did the beverage or food taste?</label>
+                <div class="controls">
+                    <select class="form-control">
+                        <option value="1">Great</option>
+                        <option value="1">Good</option>
+                        <option value="1">Neutral</option>
+                        <option value="1">Fair</option>
+                        <option value="1">Poor</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group form-group">
+                <label><strong>Customer Service</strong> - How well did we serve you?</label>
+                <div class="controls">
+                    <select class="form-control">
+                        <option value="1">Great</option>
+                        <option value="1">Good</option>
+                        <option value="1">Neutral</option>
+                        <option value="1">Fair</option>
+                        <option value="1">Poor</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group form-group">
+                <label><strong>Pricing</strong> - How was the value?</label>
+                <div class="controls">
+                    <select class="form-control">
+                        <option value="1">Great</option>
+                        <option value="1">Good</option>
+                        <option value="1">Neutral</option>
+                        <option value="1">Fair</option>
+                        <option value="1">Poor</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group form-group">
+                <label><strong>Cafe Presentation</strong> - How clean and inviting was the shop?</label>
+                <div class="controls">
+                    <select class="form-control">
+                        <option value="1">Great</option>
+                        <option value="1">Good</option>
+                        <option value="1">Neutral</option>
+                        <option value="1">Fair</option>
+                        <option value="1">Poor</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group form-group">
+                <div class="controls">
+                    <label>Other Feedback:</label>
+                    <textarea rows="5" cols="100" class="form-control" asp-for="Feedback.Message"></textarea>
+                    <span asp-validation-for="Feedback.Message" style="color:red;"></span>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success" id="sendFeedbackButton">Submit Feedback</button>
+        </form>
+    </div>
+</div>
+<br />
