@@ -1,5 +1,5 @@
 # Wired-Brain-Caffee
-- An ASP.Net Core web app for a caffee.
+- An ASP.Net Core web app for a cafe.
 
 ## Description:
 Wired-Brain-Caffee is a web app that displays a menue of coffees in different pages and user can write a feedback.
