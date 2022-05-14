@@ -10,7 +10,7 @@ Wired-Brain-Caffee is a web app that displays a menue of coffees in different pa
 - Razor Pages
 - HTML
 - CSS
-- Javascript
+- JavaScript
 - Bootstrap
 
 ## Website Link:
